@@ -1,4 +1,4 @@
-baseURL = "http://www.vuesnippets.com/"
+baseURL = "https://www.vuesnippets.com/"
 languageCode = "en-us"
 title = "Vue Snippets"
 theme = "vuesnippets"
