@@ -17,6 +17,13 @@
     display: inline-block;
   }
 
+  a.logo-wrapper {
+    .logo  {
+      margin-right: .3rem;
+      vertical-align: top;
+    }
+  }
+
   .site-name, .tag-name {
     font-size: 1.3rem;
     font-weight: 600;
