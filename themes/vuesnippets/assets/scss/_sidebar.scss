@@ -1,0 +1,34 @@
+@import "_variables";
+
+.sidebar {
+  width: 256px;
+  padding-right: 2rem;
+
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: .75rem;
+  }
+
+  .site-tags {
+    a {
+      font-weight: 500;
+      color: transparentize($darkBlue, .3);
+
+      &::before {
+        content: '# ';
+        opacity: .5;
+      }
+    }
+  }
+}
+
+.main {
+  padding: 0 2rem;
+  flex: 1;
+}
+
+.snippets {
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+}
