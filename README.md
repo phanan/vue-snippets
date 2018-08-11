@@ -10,10 +10,10 @@ So you have a trick or two up your sleeve and want to share them with the world?
 
 1. Make sure you have Hugo >= 0.46 installed. If you're on a Mac, just do a `brew install hugo` and you're good to go.
 2. Fork this repo (duh!)
-3. Execute `hugo new posts/your-awesome-tip.md` in your terminal. A file `content/posts/your-awesome-tip.md` will be created with some placeholder content, like this:
+3. Execute `hugo new posts/your-awesome-snippet.md` in your terminal. A `content/posts/your-awesome-snippet.md` file will be created with some placeholder content, like this:
   ````yaml
   ---
-  title: "Your Awesome Tip"
+  title: "Your Awesome Snippet"
   date: 2018-08-11T19:58:07+02:00
   description: A short description for the snippet.
   tags: [max, three, tags]
