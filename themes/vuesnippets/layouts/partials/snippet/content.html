@@ -1,0 +1,14 @@
+<div role="main">
+  <div class="info">
+    <h1 class="title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+    <blockquote class="description">{{ .Description }}</blockquote>
+  </div>
+
+  <div class="content">
+    {{ .Content }}
+    <a href="{{ .RelPermalink }}" class="header-permalink"></a>
+  </div>
+</div>
+
+{{ partial "snippet/author.html" . }}
+{{ partial "snippet/meta.html" . }}

@@ -1,0 +1,18 @@
+name = "Vuesnippets"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE.md"
+description = "The main theme for vuesnippets.com"
+homepage = "https://www.vuesnippets.com/"
+tags = ["vue", "snippets"]
+features = []
+min_version = "0.31"
+
+[author]
+  name = "Phan An"
+  homepage = "https://www.phanan.net"
+
+# If porting an existing theme
+[original]
+  name = ""
+  homepage = ""
+  repo = ""

@@ -1,0 +1,35 @@
+.pagination {
+  margin-top: 2rem;
+  display: flex;
+  border-radius: 9999px;
+  overflow: hidden;
+
+
+  a {
+    display: inline-block;
+    padding: .75rem 1rem;
+  }
+
+  &-single {
+    justify-content: space-between;
+
+    a {
+      background: #fff;
+      border-radius: 9999px;
+    }
+  }
+
+  .active a {
+    background: #3eaf7c;
+    color: #fff;
+  }
+
+  .disabled a {
+    color: #606f7b;
+  }
+}
+
+.pagination-full-wrapper {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,130 @@
+.snippet {
+  $footerHeight: 4rem;
+  $authorHeight: 4rem;
+
+  background: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: $footerHeight + $authorHeight;
+
+  [role=main] {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info {
+    padding: 1.5rem;
+    position: relative;
+  }
+
+  h1.title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+
+    a {
+      color: inherit;
+      font-weight: 500;
+    }
+  }
+
+  .author {
+    padding: 0 1.25rem;
+    border-top: 1px solid #f1f5f8;
+    border-bottom: 1px solid #f1f5f8;
+    position: absolute;
+    height: $authorHeight;
+    bottom: $footerHeight;
+    line-height: $authorHeight;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    .avatar {
+      border-radius: 50%;
+    }
+
+    .details {
+      flex: 1;
+      display: flex;
+      padding-left: 1rem;
+
+      .name {
+        flex: 1;
+
+        a {
+          color: #606f7b;
+        }
+      }
+
+      .social {
+        text-align: right;
+
+        a {
+          color: #929ca5;
+          margin-left: .5rem;
+        }
+      }
+    }
+  }
+
+  footer {
+    height: $footerHeight;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    font-size: .8rem;
+  }
+
+  .tags {
+    li {
+      display: inline-block;
+
+      a {
+        background: #f1f5f8;
+        border-radius: 9999px;
+        padding: .25rem .75rem;
+        display: inline-block;
+        color: #606f7b;
+        margin-right: .5rem;
+
+        &::before {
+          content: '#';
+          opacity: .5;
+        }
+      }
+    }
+  }
+
+  &-card {
+    [role=main] {
+      flex-direction: column-reverse;
+    }
+
+    a.header-permalink {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 99;
+    }
+
+    .content {
+      overflow: hidden;
+      max-height: 192px;
+      position: relative;
+
+      &::after {
+        content: " ";
+        display: block;
+        position: absolute;
+        height: 64px;
+        width: 100%;
+        bottom: 0;
+        background: linear-gradient(to bottom, rgba(193,193,193,0) 0%,rgba(40,44,52,0.98) 65%,rgba(40,44,52,1) 66%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+<header class="navbar">
+    <a href="/">
+      <span class="site-name">{{ .Site.Title }}</span>
+    </a>
+
+    {{ if eq .Page.Kind "taxonomy" }}
+      <span class="tag-name">{{ .Data.Term }}</span>
+    {{ end }}
+
+    <div class="links">
+      <div class="search-box">
+        <input aria-label="Search" autocomplete="off" spellcheck="false">
+      </div>
+      <div class="nav-links">
+        <a href="{{ $.Site.Params.github }}">GitHub</a>
+      </div>
+    </div>
+  </header>

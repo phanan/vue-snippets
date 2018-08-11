@@ -1,0 +1,10 @@
+{{ define "main" }}
+  <div class="snippets">
+    {{ range .Paginator.Pages }}
+      {{ partial "snippet/card.html" . }}
+    {{ end }}
+  </div>
+  <div class="pagination-full-wrapper">
+    {{ template "_internal/pagination.html" . }}
+  </div>
+{{ end }}

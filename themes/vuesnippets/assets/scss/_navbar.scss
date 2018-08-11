@@ -1,0 +1,85 @@
+@import "_variables";
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  right: 0;
+  height: $navbarHeight;
+  background-color: #fff;
+  box-sizing: border-box;
+  border-bottom: 1px solid #eaecef;
+  padding: .7rem 2rem;
+  line-height: 2.2rem;
+
+  a, img, span {
+    display: inline-block;
+  }
+
+  .site-name, .tag-name {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: $darkBlue;
+    position: relative;
+  }
+
+  .tag-name {
+    font-weight: 300;
+    opacity: .5;
+
+    &::before {
+      content: '#';
+    }
+  }
+
+  .links {
+    font-size: .9rem;
+    position: absolute;
+    right: 1.5rem;
+    top: .7rem;
+  }
+
+  .search-box {
+    display: inline-block;
+    position: relative;
+    margin-right: .5rem;
+
+    input {
+      cursor: text;
+      width: 10rem;
+      color: #4e6e8e;
+      display: inline-block;
+      border: 1px solid #cfd4db;
+      border-radius: 2rem;
+      font-size: .9rem;
+      line-height: 2rem;
+      padding: 0 .5rem 0 2rem;
+      outline: none;
+      transition: .2s;
+      background: #fff url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="13"><g stroke-width="2" stroke="#aaa" fill="none"><path d="M11.29 11.71l-4-4"/><circle cx="5" cy="5" r="4"/></g></svg>') .6rem .5rem no-repeat;
+      background-size: 1rem;
+
+      &:focus {
+        border-color: $green;
+      }
+    }
+  }
+
+  .nav-links {
+    display: inline-block;
+
+    .nav-item {
+      position: relative;
+      display: inline-block;
+      margin-left: 1.5rem;
+      line-height: 2rem;
+    }
+
+    a {
+      line-height: 1.4rem;
+      color: inherit;
+      margin-left: .5rem;
+    }
+  }
+}

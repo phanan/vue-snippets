@@ -1,0 +1,34 @@
+<div class="author">
+  {{ $author := $.Param "author" }}
+
+  {{ if $author.homepage }}
+    {{ .Scratch.Set "homepage" $author.homepage }}
+  {{ else if $author.twitter }}
+    {{ .Scratch.Set "homepage" (printf "https://twitter.com/%s" $author.twitter) }}
+  {{ else if $author.github }}
+    {{ .Scratch.Set "homepage" (printf "https://github.com/%s" $author.github) }}
+  {{ else }}
+    {{ .Scratch.Set "homepage" "#" }}
+  {{ end }}
+
+  {{ if $author.github }}
+    {{ .Scratch.Set "avatar" (printf "https://github.com/%s.png" $author.github) }}
+  {{ else }}
+    {{ .Scratch.Set "avatar" (printf "https://www.gravatar.com/avatar/%s?s=128&d=identicon" (md5 $author.email)) }}
+  {{ end }}
+
+  <img class="avatar shadow-sm" src="{{ .Scratch.Get "avatar" }}" width="36" height="36" alt="{{ $.Param "author.name" }}'s Avatar">
+
+  <div class="details">
+    <h4 class="name"><a href="{{ .Scratch.Get "homepage" }}">{{ $author.name }}</a></h4>
+
+    <div class="social">
+      {{ with $author.github }}
+        <a href="https://github.com/{{ . }}">{{ partial "icons/github.svg" }}</a>
+      {{ end }}
+      {{ with $author.twitter }}
+        <a href="https://twitter.com/{{ . }}">{{ partial "icons/twitter.svg" }}</a>
+      {{ end }}
+    </div>
+  </div>
+</div>
