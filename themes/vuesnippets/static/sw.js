@@ -1,4 +1,4 @@
-const CACHE_NAME = 'vue-snippets-cache-v2'
+const CACHE_NAME = 'vue-snippets-cache-v3'
 const urlsToCache = [
   '/'
 ]
@@ -16,7 +16,7 @@ self.addEventListener('fetch', event => {
     const fetchRequest = event.request.clone()
 
     return fetch(fetchRequest).then(response => {
-        if(!response || response.status !== 200 || response.type !== 'basic') {
+        if(!response || response.status !== 200) {
           return response
         }
 
