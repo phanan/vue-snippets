@@ -21,7 +21,7 @@ body {
   font-size: 16px;
   color: $darkBlue;
   background: #607d8b0f;
-  padding: $navbarHeight+2rem 0;
+  padding: $navbarHeight+2rem 0 0;
 }
 
 ol, ul, p, blockquote {
@@ -35,11 +35,11 @@ pre, code {
   font-size: .85rem;
   color: inherit;
   position: relative;
-  width: 100%;
 }
 
 pre code {
   display: block;
+  overflow: auto;
 }
 
 pre {
@@ -52,8 +52,45 @@ pre {
 
 .main-wrapper {
   display: flex;
+  width: 100%;
+
+  @media all and (max-width: 736px) {
+    flex-direction: column;
+  }
 }
 
-#disqus_thread {
+.disqus {
   margin: 2rem 0;
+
+  @media all and (max-width: 736px) {
+    padding: 0 1.5rem;
+  }
+}
+
+
+.main {
+  padding: 0 2rem;
+  flex: 1;
+  width: 100%;
+
+  @media all and (max-width: 736px) {
+    padding: 0;
+  }
+}
+
+.snippets {
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+
+  @media all and (max-width: 736px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media all and (max-width: 736px) {
+  .hide-sm {
+    display: none !important;
+  }
 }

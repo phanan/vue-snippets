@@ -5,7 +5,7 @@
     </a>
 
     {{ if eq .Page.Kind "taxonomy" }}
-      <span class="tag-name">{{ .Data.Term }}</span>
+      <span class="tag-name hide-sm">{{ .Data.Term }}</span>
     {{ end }}
 
     <div class="links">
@@ -13,7 +13,7 @@
         <input aria-label="Search" autocomplete="off" spellcheck="false">
       </div>
       <div class="nav-links">
-        <a href="{{ $.Site.Params.github }}">GitHub</a>
+        <a href="{{ $.Site.Params.github }}" class="hide-sm">GitHub</a>
       </div>
     </div>
   </header>

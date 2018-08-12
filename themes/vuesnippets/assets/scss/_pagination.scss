@@ -27,6 +27,10 @@
   .disabled a {
     color: #606f7b;
   }
+
+  @media all and (max-width: 736px) {
+    padding: 0 1.5rem;
+  }
 }
 
 .pagination-full-wrapper {

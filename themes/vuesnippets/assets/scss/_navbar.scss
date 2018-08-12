@@ -4,7 +4,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 9;
+  z-index: 999;
   right: 0;
   height: $navbarHeight;
   background-color: #fff;
@@ -12,6 +12,10 @@
   border-bottom: 1px solid #eaecef;
   padding: .7rem 2rem;
   line-height: 2.2rem;
+
+  @media all and (max-width: 736px) {
+    padding: .7rem 1.5rem;
+  }
 
   a, img, span {
     display: inline-block;
@@ -51,6 +55,10 @@
     display: inline-block;
     position: relative;
     margin-right: .5rem;
+
+    @media all and (max-width: 736px) {
+      margin-right: 0;
+    }
 
     input {
       cursor: text;

@@ -118,4 +118,11 @@
       position: relative;
     }
   }
+
+  @media all and (max-width: 736px) {
+    width: 100%;
+    border-radius: 0;
+    margin-bottom: 2rem;
+    box-shadow: none;
+  }
 }
