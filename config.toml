@@ -9,3 +9,4 @@ disqusShortname = "vue-snippets"
 
 [params]
 github = "https://github.com/phanan/vue-snippets"
+description = "A collection of useful Vue.js snippets, trips, tricks, and best practices."
