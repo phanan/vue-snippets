@@ -1,5 +1,9 @@
 # Vue Snippets
 
+<p align="center">
+  <img src="https://github.com/phanan/vue-snippets/raw/master/static/logo-512x512.png" alt="logo" width="192" height="192">
+</p>
+
 A collection of Vue.js snippets -- little trips, tricks, useful directives, some nice practices, you name it.
 
 The [website](https://www.vuesnippets.com) is powered by [Hugo](https://gohugo.io/).
