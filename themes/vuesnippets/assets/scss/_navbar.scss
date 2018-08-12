@@ -78,6 +78,15 @@
       &:focus {
         border-color: $green;
       }
+
+      @media all and (max-width: 736px) {
+        width: 5rem;
+
+        &:focus {
+          width: 10rem;
+          box-shadow: 0 0 10px 10px #fff;
+        }
+      }
     }
   }
 
