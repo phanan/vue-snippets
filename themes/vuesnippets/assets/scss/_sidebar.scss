@@ -26,6 +26,8 @@
     }
 
     @media all and (max-width: 736px) {
+      text-align: center;
+
       li {
         display: inline-block;
 
@@ -35,6 +37,7 @@
           background: #fff;
           border-radius: 9999px;
           margin-right: .5rem;
+          margin-bottom: .5rem;
           font-size: .8rem;
 
           &::before {
