@@ -26,5 +26,8 @@
     </div>
 
     {{ partial "footer.html" . }}
+
+    {{ $js := resources.Get "js/app.js" | resources.Minify | resources.Fingerprint }}
+    <script src="{{ $js.RelPermalink }}"></script>
   </body>
 </html>
