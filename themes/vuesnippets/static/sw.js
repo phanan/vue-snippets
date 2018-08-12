@@ -16,14 +16,15 @@ self.addEventListener('fetch', event => {
     const fetchRequest = event.request.clone()
 
     return fetch(fetchRequest).then(response => {
-        if(!response || response.status !== 200) {
-          return response
-        }
-
-        caches.open(CACHE_NAME).then(cache => cache.put(event.request, response.clone()))
-
+      if(!response || response.status !== 200 || response.type !== 'basic') {
         return response
       }
-    )
+
+      const responseToCache = response.clone()
+
+      caches.open(CACHE_NAME).then(cache => cache.put(event.request, responseToCache))
+
+      return response
+    })
   }))
 })
