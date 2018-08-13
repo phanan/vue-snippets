@@ -1,5 +1,5 @@
 ---
-title: "Smater Watchers"
+title: "Smarter Watchers"
 date: 2018-08-12T21:55:58+02:00
 description: Watchers that are called immediately when the component is ready.
 tags: [watcher]
