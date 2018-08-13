@@ -1,6 +1,6 @@
 [build]
 publish = "public"
-command = "hugo"
+command = "hugo && yarn algolia"
 
 [context.production.environment]
 HUGO_VERSION = "0.46"

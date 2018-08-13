@@ -10,3 +10,16 @@ disqusShortname = "vue-snippets"
 [params]
 github = "https://github.com/phanan/vue-snippets"
 description = "A collection of useful Vue.js snippets, trips, tricks, and best practices."
+
+[outputFormats.Algolia]
+baseName = "algolia"
+isPlainText = true
+mediaType = "application/json"
+notAlternative = true
+
+[params.algolia]
+vars = ["title", "summary", "date", "publishdate", "permalink"]
+params = ["tags"]
+
+[outputs]
+home = ["HTML", "RSS", "Algolia"]
