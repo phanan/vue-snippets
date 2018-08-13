@@ -40,5 +40,5 @@ So you have a trick or two up your sleeve and want to share them with the world?
   </style>
   ```
   ````
-4. Update the file with your tip (and some of your details). You don't need to fill in everything -- only title, date, description, your name, and the snippet itself, are really required. The tip can be previewed with `hugo server`.
+4. Update the file with your snippet (and some of your details). You don't need to fill in everything -- only title, date, description, your name, and the snippet itself, are really required. The snippet can be previewed with `hugo server`.
 5. Once you're happy with how it looks, commit the file and create a PR 🎉
