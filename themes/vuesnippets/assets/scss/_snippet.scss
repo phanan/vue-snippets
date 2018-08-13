@@ -19,8 +19,8 @@
   }
 
   h1.title {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
 
     a {
       color: inherit;
@@ -98,9 +98,32 @@
     }
   }
 
+  .content {
+    p, h1, h2, h3, h4, div {
+      padding: 0 1.5rem;
+    }
+
+    div.highlight {
+      padding: 0;
+    }
+
+    p {
+      margin: 1.5rem 0;
+    }
+
+    h1, h2, h3, h4 {
+      margin: 2rem 0;
+    }
+  }
+
   &-card {
     [role=main] {
       flex-direction: column-reverse;
+    }
+
+    h1.title {
+      font-size: 1.25rem;
+      margin-bottom: .75rem;
     }
 
     a.header-permalink {
