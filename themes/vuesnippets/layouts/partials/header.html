@@ -9,9 +9,11 @@
     {{ end }}
 
     <div class="links">
-      <div class="search-box">
-        <input aria-label="Search" autocomplete="off" spellcheck="false">
+      <div class="search">
+        <div class="search-box" id="searchBox"></div>
+        <div id="hits" class="shadow-sm"></div>
       </div>
+
       <div class="nav-links">
         <a href="{{ $.Site.Params.github }}" class="hide-sm">GitHub</a>
       </div>
