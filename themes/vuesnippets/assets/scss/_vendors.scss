@@ -1,0 +1,71 @@
+@import "_variables";
+
+.search {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+
+  .algolia-logo {
+    float: right;
+    margin: 1rem 1.5rem;
+  }
+
+  em {
+    background: #dcf3ff;
+  }
+
+  .ais-search-box--input, .ais-search-box {
+    height: auto;
+  }
+
+  .ais-search-box {
+    position: relative;
+    z-index: 2;
+  }
+
+  #hits {
+    position: absolute;
+    right: 0;
+    min-width: 28rem;
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+
+    @media all and (max-width: 320px) {
+      min-width: calc(100vw - 3rem);
+    }
+
+    .ais-hits--item {
+      border-top: 1px solid #f1f5f8;
+
+      &:first-of-type {
+        border-top: 0;
+      }
+    }
+
+    a {
+      padding: 1rem 1.5rem;
+      display: block;
+      color: transparentize($darkBlue, .3);
+      font-weight: normal;
+
+      h3.title {
+        font-weight: 500;
+        color: $darkBlue;
+      }
+
+      .description {
+        margin-top: .5rem;
+      }
+
+      &:hover {
+        background: #f1f5f8;
+      }
+    }
+
+    .na {
+      padding: .75rem 1.5rem;
+      font-style: italic;
+    }
+  }
+}

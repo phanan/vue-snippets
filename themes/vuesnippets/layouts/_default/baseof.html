@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="description" content="{{ .Description | default $.Site.Params.description }}">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.0/dist/instantsearch.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.0/dist/instantsearch-theme-algolia.min.css">
 
     {{ $style := resources.Get "scss/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
@@ -26,6 +28,8 @@
     </div>
 
     {{ partial "footer.html" . }}
+
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.0"></script>
 
     {{ $js := resources.Get "js/app.js" | resources.Minify | resources.Fingerprint }}
     <script src="{{ $js.RelPermalink }}"></script>

@@ -54,7 +54,6 @@
   .search-box {
     display: inline-block;
     position: relative;
-    margin-right: .5rem;
 
     @media all and (max-width: 736px) {
       margin-right: 0;
@@ -72,8 +71,6 @@
       padding: 0 .5rem 0 2rem;
       outline: none;
       transition: .2s;
-      background: #fff url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="13"><g stroke-width="2" stroke="#aaa" fill="none"><path d="M11.29 11.71l-4-4"/><circle cx="5" cy="5" r="4"/></g></svg>') .6rem .5rem no-repeat;
-      background-size: 1rem;
 
       &:focus {
         border-color: $green;
