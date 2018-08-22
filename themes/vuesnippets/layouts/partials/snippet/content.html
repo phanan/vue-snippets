@@ -1,7 +1,7 @@
 <div role="main">
   <div class="info">
     <h1 class="title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
-    <blockquote class="description">{{ .Description }}</blockquote>
+    <blockquote class="description">{{ .Description | markdownify }}</blockquote>
   </div>
 
   <div class="content">

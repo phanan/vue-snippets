@@ -1,7 +1,7 @@
 ---
 title: "Detect if user has scrolled to bottom"
 date: 2018-08-12T10:24:39+02:00
-description: Detect if the user has scrolled to bottom of a container element and executed a function (for example, load more posts à la infinite scrolling).
+description: Detect if the user has scrolled to bottom of a container element and executed a function (for example, load more posts _à la_ infinite scrolling).
 tags: [utility, DOM]
 author:
   name: Phan An
