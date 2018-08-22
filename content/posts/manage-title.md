@@ -21,7 +21,6 @@ new Vue({
   watch: {
     documentTitle: {
       immediate: true,
-      deep: true,
       handler (value) {
         document.title = value
       }
