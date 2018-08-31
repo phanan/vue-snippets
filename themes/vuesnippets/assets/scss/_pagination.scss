@@ -4,7 +4,6 @@
   border-radius: 9999px;
   overflow: hidden;
 
-
   a {
     display: inline-block;
     padding: .75rem 1rem;
@@ -36,4 +35,41 @@
 .pagination-full-wrapper {
   display: flex;
   justify-content: center;
+}
+
+.pagination-single {
+  a {
+    &.previous {
+      &::before {
+        content: "←";
+        display: inline-block;
+        margin-right: .2rem;
+      }
+    }
+
+    &.next {
+      &::after {
+        content: "→";
+        display: inline-block;
+        margin-left: .2rem;
+      }
+    }
+  }
+
+  @media all and (max-width: 736px) {
+    a {
+      background: none;
+      display: flex;
+
+      &.previous {
+        padding: 0 .5rem 0 0;
+        text-align: left;
+      }
+
+      &.next {
+        padding: 0 0 0 .5rem;
+        text-align: right;
+      }
+    }
+  }
 }

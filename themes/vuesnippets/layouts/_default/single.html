@@ -7,10 +7,10 @@
 
   <nav class="pagination pagination-single">
     {{ with .PrevInSection }}
-      <a class="previous background-sm" href="{{ .Permalink }}">← {{ .Title }}</a>
+      <a class="previous background-sm" href="{{ .Permalink }}"><span>{{ .Title }}</span></a>
     {{ end }}
     {{ with .NextInSection }}
-      <a class="next background-sm" href="{{ .Permalink }}">{{ .Title }} →</a>
+      <a class="next background-sm" href="{{ .Permalink }}"><span>{{ .Title }}</span></a>
     {{ end }}
   </nav>
 
