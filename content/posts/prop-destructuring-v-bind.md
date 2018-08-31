@@ -2,7 +2,7 @@
 title: "Use v-bind for prop destructuring"
 date: 2018-08-31T20:02:09+07:00
 description: Use `v-bind` as kind of a "prop destructuring" instead of passing multiple object properties into a component as props.
-tags: [prop]
+tags: [component, prop]
 author:
   name: Caleb Porzio
   email: calebporzio@gmail.com
