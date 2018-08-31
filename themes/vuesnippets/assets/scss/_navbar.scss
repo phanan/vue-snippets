@@ -71,6 +71,7 @@
       padding: 0 .5rem 0 2rem;
       outline: none;
       transition: .2s;
+      box-shadow: none;
 
       &:focus {
         border-color: $green;
