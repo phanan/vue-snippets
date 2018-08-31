@@ -19,7 +19,7 @@ author:
     :author="post.author"
   />
   
-  <-- This (↑) is the same as this (↓) -->
+  <!-- This (↑) is the same as this (↓) -->
 
   <post v-bind="post" />
 </template>
