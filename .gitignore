@@ -1,5 +1,4 @@
-/public
-*.swp
-.DS_Store
-.env
+.tmp/
+coverage/
+dist/
 node_modules/
