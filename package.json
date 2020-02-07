@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "atomic-algolia": "^0.3.15"
+    "atomic-algolia": "0.3.15"
   },
   "scripts": {
     "algolia": "atomic-algolia"
