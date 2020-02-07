@@ -153,7 +153,7 @@ ansi-styles@^3.2.1:
   dependencies:
     color-convert "^1.9.0"
 
-atomic-algolia@^0.3.15:
+atomic-algolia@0.3.15:
   version "0.3.15"
   resolved "https://registry.yarnpkg.com/atomic-algolia/-/atomic-algolia-0.3.15.tgz#28ea6cf537d9ed2d7caccb65dee9d441180bbb9c"
   dependencies:
